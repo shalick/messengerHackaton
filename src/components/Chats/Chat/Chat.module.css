@@ -1,0 +1,66 @@
+.chat {
+  /* position: relative; */
+  padding: 10px 0 15px 0;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.wrap {
+  width: 88%;
+  margin: 0 auto;
+  /* position: relative; */
+  display: grid;
+  grid-template-rows: 40px;
+  grid-template-columns: 40px 10px 1fr;
+  grid-gap: 2px;
+  grid-template-areas: 'avatar . meta'
+}
+
+.avatar {
+  position: relative;
+  width: 40px;
+  grid-area: 'avatar';
+}
+
+.avatar span {
+  position: absolute;
+  left: 0;
+  margin: -2px 0 0 -2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #2c3e50;
+  background: #95a5a6;
+}
+
+.avatar img {
+  width: 100%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.meta {
+    padding: 5px 0 0 0;
+    grid-area: 'meta';
+  }
+
+.meta .name {
+    font-weight: 600;
+  }
+.meta .preview {
+  margin: 5px 0 0 0;
+  padding: 0 0 1px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+.meta .preview span {
+    position: initial;
+    border-radius: initial;
+    background: none;
+    border: none;
+    padding: 0 2px 0 0;
+    margin: 0 0 0 1px;
+    opacity: .5;
+  }
