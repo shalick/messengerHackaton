@@ -13,6 +13,13 @@ class Chats extends React.Component {
                 <Chat />
                 <Chat />
                 <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
+                <Chat />
             </div>
         )
     }

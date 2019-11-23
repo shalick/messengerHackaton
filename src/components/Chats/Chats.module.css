@@ -1,6 +1,18 @@
 .chats {
-    border: solid 1px red;
     height: calc(100% - 177px);
     overflow-y: scroll;
     overflow-x: hidden
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #243140; 
+  }

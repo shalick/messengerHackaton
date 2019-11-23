@@ -5,7 +5,7 @@ class Profile extends React.Component {
     render() {
         return (
             <div className={s.profile}>
-                <div class={s.wrap}>
+                <div className={s.wrap}>
                     <img className={`${s.profileImg} ${s.online}`} src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
                     <p>Mike Ross</p>
                 </div>

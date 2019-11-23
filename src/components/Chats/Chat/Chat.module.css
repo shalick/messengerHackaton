@@ -1,5 +1,4 @@
 .chat {
-  /* position: relative; */
   padding: 10px 0 15px 0;
   font-size: 0.9em;
   cursor: pointer;
@@ -8,18 +7,16 @@
 .wrap {
   width: 88%;
   margin: 0 auto;
-  /* position: relative; */
-  display: grid;
-  grid-template-rows: 40px;
-  grid-template-columns: 40px 10px 1fr;
-  grid-gap: 2px;
-  grid-template-areas: 'avatar . meta'
+  display: flex;
+  height: 40px;
 }
 
 .avatar {
   position: relative;
-  width: 40px;
-  grid-area: 'avatar';
+  min-width: 40px;
+  max-width: 40px;
+  height: 100%;
+  margin-right: 10px;
 }
 
 .avatar span {
@@ -37,23 +34,34 @@
   width: 100%;
   border-radius: 50%;
   margin-right: 10px;
+  height: inherit;
+  
 }
 
 .meta {
-    padding: 5px 0 0 0;
-    grid-area: 'meta';
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .meta p {
+    margin: 0;
   }
 
 .meta .name {
     font-weight: 600;
   }
 .meta .preview {
-  margin: 5px 0 0 0;
   padding: 0 0 1px;
-  font-weight: 400;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
   }
 .meta .preview span {
     position: initial;

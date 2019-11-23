@@ -1,15 +1,12 @@
 import React from 'react'
 import './App.css'
-import Chats from './components/Chats/Chats'
 import CurrentChat from './components/CurrentChat/CurrentChat'
 import SidePanel from './components/SidePanel/SidePanel';
 import {api} from "./DAL/Api";
 
 class App extends React.Component {
     componentDidMount() {
-        debugger
         api.getToken().then((res)=>{
-            debugger;
         })
     }
 
