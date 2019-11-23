@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Chats from './components/Chats/Chats'
 import CurrentChat from './components/CurrentChat/CurrentChat'
+import SidePanel from './components/SidePanel/SidePanel';
 import {api} from "./DAL/Api";
 import openSocket from "socket.io";
 
@@ -20,8 +21,7 @@ class App extends React.Component {
     render() {
     return (
       <div className="App">
-        <Chats />
-
+        <SidePanel />
         <CurrentChat />
       </div>
     )
