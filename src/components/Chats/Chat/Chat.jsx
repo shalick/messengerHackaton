@@ -5,8 +5,12 @@ class Chat extends React.Component {
     render() {
         return (
             <div className={s.chat}>
-            <h1>wqwe</h1>
-                
+                <div className={s.avatar}>
+                   <img src='' alt="avatar"/>
+                </div>
+                <div className={s.name}></div>
+                <div className={s.lastMessageTime}></div>
+                <div className={s.lastMessageBody}></div>
             </div>
         )
     }
